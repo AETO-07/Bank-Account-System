@@ -66,6 +66,28 @@ python BANK_ACCOUNT_SYSTEM.py
 6. Save accounts to JSON
 7. Exit the application
 
+## Screenshots
+
+### Menu
+
+![Menu](Bank-Account-System\Screenshots\Menu.png.png)
+
+### Create Account
+
+![Create Account](Bank-Account-System\Screenshots\Create-accounts.png)
+
+### Withdrawal
+
+![Withdrawal](Bank-Account-System\Screenshots\withdraw.png)
+
+### Transaction History
+
+![Transaction History](Bank-Account-System\Screenshots\Account-history.png)
+
+### Save Accounts
+
+![Save Accounts](Bank-Account-System\Screenshots\Save.png)
+
 ## Future Improvements
 
 - PIN authentication
