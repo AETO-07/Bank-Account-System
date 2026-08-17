@@ -2,6 +2,8 @@
 
 ## Overview
 
+The Bank Account System is a command-line Python application that simulates basic banking operations. Users can create multiple accounts, deposit and withdraw funds, transfer money between accounts, view transaction histories, and save account data using JSON storage. The project demonstrates Object-Oriented Programming (OOP), file handling, data persistence, and input validation in Python.
+
 ## Features
 
 - Create multiple bank accounts
@@ -26,11 +28,13 @@
 
 ## Project Structure
 
+```text
 Bank-Account-System/
 │
-├── BANK_ACCOUNT_SYSTEM.py
+├── bank_account_system.py
 ├── README.md
 └── .gitignore
+```
 
 ## How to Run
 

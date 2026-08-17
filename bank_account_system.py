@@ -1,11 +1,14 @@
 import json, datetime
+
+def get_date():
+    return datetime.datetime.now().strftime("%d %b, %Y")
+
 class BankAccount:
     def __init__(self, account_name, account_number):
         self.account_name = account_name
         self.balance = 0.0
         self.account_number = account_number
         self.history = []
-
 
     def __str__(self):
         return (
@@ -23,7 +26,7 @@ class BankAccount:
         self.history.append({"type": "Deposit",
                             "amount": amount,
                             "balance": self.balance,
-                            "date": datetime.datetime.now().strftime("%d %b, %Y")
+                            "date": get_date()
                             })
         return True
 
@@ -38,7 +41,7 @@ class BankAccount:
                 "type": "Withdrawal",
                 "amount": amount,
                 "balance": self.balance,
-                "date": datetime.datetime.now().strftime("%d %b, %Y")
+                "date": get_date()
             })
             return True
         else:
@@ -71,25 +74,25 @@ try:
     print(f"{len(accounts)} account(s) loaded successfully.")
 
 except FileNotFoundError:
-    print("No database found")
+    print("No existing database found. Starting with an empty system.")
 except json.JSONDecodeError:
-    print("No data in database.")
+    print("Database file is empty.")
 
 if not accounts:
     next_account_number = 1000000
 else:
-    highest = max(account.account_number for account in accounts)
+    highest = max(int(account.account_number) for account in accounts)
     next_account_number = highest + 1
 
 def menu():
     print(
-        "WELCOME TO BANK ACCOUNT SYSTEM" \
-        "\n 1. Create Account" \
-        "\n 2. View Accounts" \
-        "\n 3. Deposit" \
-        "\n 4. Withdraw" \
-        "\n 5. Transfer" \
-        "\n 6. View Transaction History" \
+        "WELCOME TO BANK ACCOUNT SYSTEM" 
+        "\n 1. Create Account" 
+        "\n 2. View Accounts" 
+        "\n 3. Deposit" 
+        "\n 4. Withdraw" 
+        "\n 5. Transfer" 
+        "\n 6. View Transaction History" 
         "\n 7. Save Accounts" 
         "\n 8. Exit"
     )
@@ -136,7 +139,6 @@ while True:
             pass
         else:
             print("Invalid choice. Please enter 'y' or 'n'.")
-            #I feel it should ask the question again
 
     elif save_choice == 2:
         if not accounts:
