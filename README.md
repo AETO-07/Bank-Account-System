@@ -74,19 +74,19 @@ python BANK_ACCOUNT_SYSTEM.py
 
 ### Create Account
 
-![Create Account](Bank-Account-System\Screenshots\Create-accounts.png)
+![Create Account](Screenshots/Create-accounts.png)
 
 ### Withdrawal
 
-![Withdrawal](Bank-Account-System\Screenshots\withdraw.png)
+![Withdrawal](Screenshots/withdraw.png)
 
 ### Transaction History
 
-![Transaction History](Bank-Account-System\Screenshots\Account-history.png)
+![Transaction History](Screenshots/Account-history.png)
 
 ### Save Accounts
 
-![Save Accounts](Bank-Account-System\Screenshots\Save.png)
+![Save Accounts](Screenshots/Save.png)
 
 ## Future Improvements
 
