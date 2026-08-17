@@ -70,7 +70,7 @@ python BANK_ACCOUNT_SYSTEM.py
 
 ### Menu
 
-![Menu](Bank-Account-System\Screenshots\Menu.png.png)
+![Menu](Screenshots/Menu.png.png)
 
 ### Create Account
 
